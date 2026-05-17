@@ -1,0 +1,164 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  p {
+    font-size: 18px;}
+
+    .card-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+  
+}
+
+
+a { text-decoration: none;
+    &:link {color: black;}
+    &:visited{color: rgb(255, 255, 255);}
+    &:active{color: #333;}
+    &:hover {background: darkgoldenrod;}
+}
+
+#menu-toggle{
+    display: none;
+}
+
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    gap: 5px;
+}
+
+.hamburger-icon span{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    transition: 0.9s;
+}
+
+.menu-links{
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+
+#menu-toggle:checked ~ .menu-links{
+    display: block;
+}
+
+.menu-links a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+body{ font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.6;    
+    background-color: rgba(184, 157, 89, 0.555);
+    
+}
+
+.main-container{
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    max-width: 100%;
+
+    
+}
+
+.hamburger-menu{
+    padding:20px 0;
+    
+    
+}
+
+ul {list-style-type: none;}
+
+.hero{
+width: 100%;
+ height: 100%;
+ 
+  
+  }
+
+.hero-container{position: relative;
+display: inline-block;
+border: 3px solid #ddd;
+box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+max-width: 100%;
+
+}
+
+.text-overlay {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  overflow-wrap: break-all ;
+  font-size: 1vw;
+}
+
+
+
+.hero img{
+  width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  
+}
+
+
+.text-overlay{ position: absolute;
+top: 20px;
+left: 20px;
+padding: 10px;}
+
+
+.card img {
+    border: 3px solid #ddd;
+box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+margin: 20px;
+}
+
+.projects{padding: 20px;}
+
+.project-title{
+text-align: center;
+}
+
+.projects .card-container{
+    display: flex;
+    flex-direction: row;  
+    
+} 
+
+ .projects .card-container .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding: 20px 0;
+}
+
+.title{
+    color: #333;
+}
+
+#footer{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    
+}
